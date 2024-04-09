@@ -1,11 +1,36 @@
-import "./App.css";
+import Body from "./components/Body";
+import Header from "./components/Header";
 
-function App() {
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+
+const AppLayout = () => {
   return (
-    <div className="App">
-      <h1 className="text-4xl font-bold text-red-500 ">working</h1>
-    </div>
+    <>
+      <Header />
+      <Outlet />
+    </>
   );
-}
+};
+
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <AppLayout />,
+    children: [
+      {
+        path: "/",
+        element: <Body />,
+      },
+    ],
+  },
+]);
+
+const App = () => {
+  return (
+    <>
+      <RouterProvider router={appRouter}></RouterProvider>;
+    </>
+  );
+};
 
 export default App;
