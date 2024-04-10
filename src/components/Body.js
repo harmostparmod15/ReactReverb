@@ -1,5 +1,8 @@
 import Hero from "./Hero";
 import Feature from "./Features";
+import Testimonials from "./Testimonials";
+import Faq from "./Faq";
+import Footer from "./Footer";
 
 const Body = () => {
   return (
@@ -9,6 +12,15 @@ const Body = () => {
 
       {/*  features section */}
       <Feature />
+
+      {/*  testimonials section */}
+      <Testimonials />
+
+      {/*  faq section */}
+      <Faq />
+
+      {/*  footer section */}
+      <Footer />
     </div>
   );
 };
