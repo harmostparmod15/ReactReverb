@@ -1,4 +1,4 @@
-import arrowImage from "../images/arrow.png";
+import arrowImage from "../../images/arrow.png";
 
 const FaqItems = (props) => {
   const question = props.data.ques;

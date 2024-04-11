@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import HeaderLogo from "../images/book-logo.png";
+import HeaderLogo from "../../images/book-logo.png";
 
 const Header = () => {
   return (
@@ -23,7 +23,7 @@ const Header = () => {
       </ul>
 
       <ul className="font-bold w-3/12 flex justify-between">
-        <Link to="/learn" className="cursor-pointer">
+        <Link to="/learn/react-basic" className="cursor-pointer">
           <li>Learn React</li>
         </Link>
 

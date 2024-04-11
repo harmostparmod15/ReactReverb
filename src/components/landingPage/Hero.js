@@ -1,6 +1,6 @@
-import reactLogo from "../images/reactt-logo.png";
-import jsLogo from "../images/js-logo.jpeg";
-import tutorialHellLogo from "../images/tutorial-hell.png";
+import reactLogo from "../../images/reactt-logo.png";
+import jsLogo from "../../images/js-logo.jpeg";
+import tutorialHellLogo from "../../images/tutorial-hell.png";
 
 const Hero = () => {
   return (

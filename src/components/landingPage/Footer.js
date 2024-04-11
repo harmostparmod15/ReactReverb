@@ -1,4 +1,5 @@
-import HeaderLogo from "../images/book-logo.png";
+import { Link } from "react-router-dom";
+import HeaderLogo from "../../images/book-logo.png";
 
 const Footer = () => {
   return (
@@ -20,7 +21,9 @@ const Footer = () => {
         </div>
         {/* right side links */}
         <div className=" w-3/12 list-none flex flex-col gap-4 font-bold ">
-          <li>Learn React</li>
+          <Link to="/learn-react" className="cursor-pointer">
+            <li>Learn React</li>
+          </Link>
           <li>Learn JS</li>
           <li>Quiz</li>
         </div>

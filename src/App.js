@@ -1,7 +1,11 @@
-import Body from "./components/Body";
-import Header from "./components/Header";
+import Body from "./components/landingPage/Body";
+import Header from "./components/landingPage/Header";
 
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import ReactBasic from "./components/learnReact/ReactBasic";
+import Bundlers from "./components/learnReact/Bundlers";
+
+import Error from "./components/Error";
 
 const AppLayout = () => {
   return (
@@ -21,7 +25,16 @@ const appRouter = createBrowserRouter([
         path: "/",
         element: <Body />,
       },
+      {
+        path: "/learn/react-basic",
+        element: <ReactBasic />,
+      },
+      {
+        path: "/learn/bundlers",
+        element: <Bundlers />,
+      },
     ],
+    errorElement: <Error />,
   },
 ]);
 

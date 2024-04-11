@@ -1,6 +1,6 @@
-import learnLogo from "../images/learn-logo.png";
-import freeLogo from "../images/free-logo.jpeg";
-import quizLogo from "../images/quiz-logo.png";
+import learnLogo from "../..//images/learn-logo.png";
+import freeLogo from "../../images/free-logo.jpeg";
+import quizLogo from "../../images/quiz-logo.png";
 
 const Feature = () => {
   return (

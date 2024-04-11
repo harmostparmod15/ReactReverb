@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { questionsList } from "../utils/constants";
+import { questionsList } from "../../utils/constants";
 
 import FaqItems from "./FaqItems";
 

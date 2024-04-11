@@ -1,7 +1,7 @@
-import testImage1 from "../images/testimonials-image-1.jpeg";
+import testImage1 from "../../images/testimonials-image-1.jpeg";
 
-import testImage2 from "../images/testimonials-image-2.jpeg";
-import arrowImage from "../images/arrow.png";
+import testImage2 from "../../images/testimonials-image-2.jpeg";
+import arrowImage from "../../images/arrow.png";
 
 const Testimonials = () => {
   const handleCLick = () => {
@@ -31,6 +31,7 @@ const Testimonials = () => {
           ></img>
           {/*  right arrow */}
           <img
+            alt="logo"
             onClick={handleCLick}
             className=" rotate-180 absolute right-40 top-2/4 rounded-full h-24 w-24 "
             src={arrowImage}
@@ -40,6 +41,7 @@ const Testimonials = () => {
 
           <div className="absolute left-[29%] top-0 first-test transition-all duration-500   w-5/12 flex flex-col items-center p-12 rounded-lg mx-auto bg-white">
             <img
+              alt="logo"
               className="absolute -top-10 h-24 w-24 rounded-full"
               src={testImage1}
             ></img>
@@ -56,6 +58,7 @@ const Testimonials = () => {
 
           <div className=" absolute top-0 left-[29%] second-test transition-all duration-500 translate-x-[1000rem]  w-5/12 flex flex-col items-center p-12 rounded-lg mx-auto bg-white">
             <img
+              alt="logo"
               className="absolute -top-10 h-24 w-24 rounded-full"
               src={testImage2}
             ></img>
